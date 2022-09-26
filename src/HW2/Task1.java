@@ -1,19 +1,17 @@
 package HW2;
 
+/*
+Задача на IF
+
+Дан номер месяца, например int month = 5. В зависимости от данного значения вывести в консоль время года
+ */
 public class Task1 {
     public static void main(String[] args) {
-        byte mounth = 4;
-        if (mounth == 1) System.out.println("Январь");
-        else if (mounth == 2) System.out.println("Февраль");
-        else if (mounth == 3) System.out.println("Март");
-        else if (mounth == 4) System.out.println("Апрель");
-        else if (mounth == 5) System.out.println("Май");
-        else if (mounth == 6) System.out.println("Июнь");
-        else if (mounth == 7) System.out.println("Июль");
-        else if (mounth == 8) System.out.println("Август");
-        else if (mounth == 9) System.out.println("Сентябрь");
-        else if (mounth == 10) System.out.println("Октябрь");
-        else if (mounth == 11) System.out.println("Ноябрь");
-        else System.out.println("Декабрь");
+        byte mounth = -1;
+        if (mounth <= 0 || mounth > 12) System.out.println("Введите верный параметр");
+        else if (mounth == 12 || mounth == 1 || mounth == 2) System.out.println("Зима");
+        else if (mounth == 3 || mounth == 4 || mounth == 5) System.out.println("Весна");
+        else if (mounth == 6 || mounth == 7 || mounth == 8) System.out.println("Лето");
+        else  System.out.println("Осень");
     }
 }
