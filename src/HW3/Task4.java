@@ -25,8 +25,8 @@ public class Task4 {
             System.out.println(dish) ;
         }
         System.out.println(count); // просто ввел счетчик для подсчета сколько он раз выполнил действия
-        System.out.print(plate + " "); //я так и не разобрался как вывести разные типы данных в одно действие
-        System.out.println(dish);
+        System.out.print(plate + " " + dish); //я так и не разобрался как вывести разные типы данных в одно действие. но вроде разобрался
+        //System.out.println(dish);
     }
 }
 //решил думаю верно но как то криво что ли
