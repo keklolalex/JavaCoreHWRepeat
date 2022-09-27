@@ -4,7 +4,11 @@ package HW3;
  */
 public class Task2 {
     public static void main(String[] args) {
-        for (int i = 0, start = 2; i < 10; i++, start += 2){ //наверное можно start перенести внутрь цикла
+        for (int i = 0, start = 2; i < 10; i++, start += 2){
+        /*
+        наверное можно start перенести внутрь цикла так будет наверное правильно?
+        но он все равно изменится же в след итерации
+        */
             // i - это счетчик
             System.out.println(start);
         }
