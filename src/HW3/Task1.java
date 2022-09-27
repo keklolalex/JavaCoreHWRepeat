@@ -8,7 +8,7 @@ package HW3;
 
 public class Task1 {
     public static void main(String[] args) {
-        for (int start = 90; start > 0; start -= 5){
+        for (int start = 90; start > 0; start -= 5){ // 0 нет в выводе т.к. оно ни положительное не отрицательное
             System.out.println(start);
         }
     }
