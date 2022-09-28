@@ -28,6 +28,7 @@ public class Task5 {
             if (random > game) System.out.println("загаданное число больше");
             else if (random < game) System.out.println("загаданное число меньше"); break;
             ...
+            ...
             */
         }
     }
