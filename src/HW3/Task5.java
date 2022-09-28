@@ -24,11 +24,12 @@ public class Task5 {
             if (random < game) System.out.println("загаданное число меньше " + random);
             if (random == game) System.out.println("Вы угадали " + random);
             break;
+            /* не понятен 1 момент почему не проходит такая запись break на каждое условие, можно ли break записывать с командой в одной строке
+            if (random > game) System.out.println("загаданное число больше");
+            else if (random < game) System.out.println("загаданное число меньше"); break;
+            ...
+            */
         }
     }
 }
-/* не понятен 1 момент почему не проходит такая запись break на каждое условие, можно ли break записывать с командой в одной строке
- if (random > game) System.out.println("загаданное число больше");
-        else if (random < game) System.out.println("загаданное число меньше"); break;
-        ...
- */
+
