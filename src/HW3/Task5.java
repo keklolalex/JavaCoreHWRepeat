@@ -1,7 +1,6 @@
 package HW3;
 
 import java.util.Scanner;
-
 /*
 Задача на использование любого цикла (выберите сами)
 
@@ -23,21 +22,26 @@ public class Task5 {
                 System.out.println("выход из программы ");
                 break;
             }
-            else if (random > game) {
+            if (random > game) {
                 System.out.println("загаданное число больше");
+                //break;
             }
-            else if (random < game) {
+            if (random < game) {
                 System.out.println("загаданное число меньше");
+                //break;
             }
-            else {
+            if (random == game){
                 System.out.println("Вы угадали " + random);
                 break;
             }
+            //System.out.println("Вы угадали " + random);
+                //break;
+        }
             /* не понятен 1 момент почему не проходит такая запись break на каждое условие, можно ли break записывать с командой в одной строке
             if (random > game) System.out.println("загаданное число больше");
             else if (random < game) System.out.println("загаданное число меньше"); break;
             ...
             */
-        }
     }
 }
+
