@@ -17,11 +17,11 @@ public class Task5 {
             System.out.println(age + " " + exp);
             System.out.println("Мы Вам перезвоним");
         }
-        else if (exp < 5 && age <= 100) { //наверное не обязательно снова возраст проверять, да я уверен что не надо проверять
+        else if (exp < 5) { //наверное не обязательно снова возраст проверять, да я уверен что не надо проверять
             System.out.println(age + " " + exp);
             System.out.println("Вы подходите на должность стажера");
         }
-        else if (exp >= 5 && age <= 100){
+        else {
             System.out.println(age + " " + exp);
             System.out.println("Вы подходите на должность разработчика");
         }
