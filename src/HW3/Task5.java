@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package HW3;
 
 import java.util.Scanner;
@@ -33,3 +34,7 @@ public class Task5 {
     }
 }
 
+=======
+package HW3;public class Task5 {
+}
+>>>>>>> 71637ef870f1666c2f97e59473fdd409a4434d2b
