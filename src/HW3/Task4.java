@@ -17,7 +17,7 @@ public class Task4 {
         int plate = in.nextInt();
         double dish = in.nextDouble();
         int count = 0;
-        while (dish != 0 && plate != 0){
+        while (dish > 0 && plate > 0){
             plate -= 1;
             dish -= 0.5;
             count++;
