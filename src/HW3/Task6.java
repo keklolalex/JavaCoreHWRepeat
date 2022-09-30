@@ -15,9 +15,6 @@ public class Task6 {
         //int random = (int) (2 + Math.random() * 99);
         Scanner in = new Scanner(System.in);
         int game = in.nextInt(); //вводим число, что загадывает пользователь
-        //int left = 2;
-        //int right = 100;
-        //int mid = (left + right) / 2;
         for (int right = 101, left = 2, mid = 0 ; game != mid; mid = (left + right) / 2) {
             System.out.println("число равно " + mid + " ?");
             int choice = in.nextInt(); //0 нет
@@ -26,7 +23,7 @@ public class Task6 {
                 int choiceOne = in.nextInt(); //0 нет
                 if (choiceOne == 0) right = mid;
                 else left = mid;
-            } // наверное здесь что то нужно
-        }System.out.println("угадал число " + game); // вот с этими двумя строками не понимаю, ему точно нужна строка для for эта последняя
+            }
+        }System.out.println("угадал число " + game);
     }
 }

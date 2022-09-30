@@ -17,6 +17,7 @@ public class Task5 {
         int random = (int) (1 + Math.random() * 9);
         Scanner in = new Scanner(System.in);
         while (true){
+            System.out.println("Введите число от 1 до 9");
             int game = in.nextInt();
             if (game == 0) {
                 System.out.println("выход из программы ");
@@ -24,24 +25,15 @@ public class Task5 {
             }
             if (random > game) {
                 System.out.println("загаданное число больше");
-                //break;
             }
             if (random < game) {
                 System.out.println("загаданное число меньше");
-                //break;
             }
             if (random == game){
                 System.out.println("Вы угадали " + random);
                 break;
             }
-            //System.out.println("Вы угадали " + random);
-                //break;
         }
-            /* не понятен 1 момент почему не проходит такая запись break на каждое условие, можно ли break записывать с командой в одной строке
-            if (random > game) System.out.println("загаданное число больше");
-            else if (random < game) System.out.println("загаданное число меньше"); break;
-            ...
-            */
     }
 }
 

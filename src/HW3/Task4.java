@@ -16,8 +16,8 @@ public class Task4 {
         Scanner in = new Scanner(System.in);
         int plate = in.nextInt();
         double dish = in.nextDouble();
-        int count = 0;
-        while (dish > 0 && plate > 0){
+        int count = 0; //надо было цикл добавить на проверку ввода
+        while (dish > 0 && plate >= 0.5){ // тут была ошибка надо было 0.5 на мыло, ведь может в минус пойти
             plate -= 1;
             dish -= 0.5;
             count++;
@@ -25,8 +25,7 @@ public class Task4 {
             System.out.println(dish) ;
         }
         System.out.println(count); // просто ввел счетчик для подсчета сколько он раз выполнил действия
-        System.out.print(plate + " " + dish); //я так и не разобрался как вывести разные типы данных в одно действие. но вроде разобрался
+        System.out.print(plate + " " + dish);
         //System.out.println(dish);
     }
 }
-//решил думаю верно но как то криво что ли
