@@ -22,7 +22,8 @@ public class Task4 {
                 maxMax = words[i].length();
                 bon = words[i];
             }
-        }System.out.println(bon);
+        }System.out.println("самое длинное слово в предложении");
+        System.out.println(pool + " - " + bon);
     }
 }
 
