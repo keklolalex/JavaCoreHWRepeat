@@ -17,29 +17,19 @@ public class Task3 {
         System.out.println("Ведите длину массива");
         int n = in.nextInt();
         String[] mass = new String[n];
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < mass.length; i++){
             System.out.println("Ведите слово или текст");
-            String newWord = new Scanner(System.in).nextLine(); //записал какое то число
-            if (newWord.equals("exit")){
-                break;
-            }
-            /*
-            String[] cloneArr = mass.clone(); // склонировал массив
-            mass[i] = newWord; //присвоил значению в старом массиве новое значение
-            if (Arrays.equals(mass, cloneArr) == true){
-                break;
-            }
-            */
-
-            }
-            for (int j = 0; j <= i; j++){
-                boolean pool = mass[j].equals(newWord);
-                if (pool == true){
+            String newWord = new Scanner(System.in).nextLine(); //записал какое-то слово
+            mass[i] = newWord;
+            for (int g = i + 1; g < mass.length; g++){
+                if (newWord != null /*true*/ || newWord.equalsIgnoreCase(mass[g]) /*но здесь то всегда false почти*/) { //если try надо выйти из цикла
+                    System.out.println(mass[g]);
                     break;
                 }
             }
-
-            mass[i] = newWord;
+            if (newWord.equals("exit")){ //если try надо выйти из цикла
+                break;
+            }
         }
         System.out.println(Arrays.toString(mass));
     }
