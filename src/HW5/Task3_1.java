@@ -29,15 +29,16 @@ public class Task3_1 {
                 i--;
                 continue;
             }
-            for (String wordPriss: priss){ //проверка на null чтобы их не было в цикле
+            for (String wordPriss: priss){ //проверка на null
                 if (wordPriss == null){
                     continue;
                 }
-                if (wordPriss.equalsIgnoreCase(word)){
+                if (wordPriss.equalsIgnoreCase(word)){ //проверка на похожие слова
                     getTrueWord = true;
+                    break;
                 }
             }
-            if (getTrueWord){
+            if (getTrueWord){ //вот собстевенно и возврат значения чтобы попробовать заново ввести слово
                 i--;
                 continue;
             }
