@@ -5,6 +5,8 @@ package ru.itmo.HW.HW6.workOne.climber;
  */
 public class Climber { //альпинист
 
+    //сделать проверку на null
+
     private String name;
 
     private String address;

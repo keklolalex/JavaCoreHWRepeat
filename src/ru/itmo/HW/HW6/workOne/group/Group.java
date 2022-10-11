@@ -14,16 +14,39 @@ import java.util.Arrays;
  */
 public class Group { //группа
 
+    private int index;
     private final Climber[] groupClimbers;
 
     private final Mountain mountain;
 
+    private int groupSize;
+
+    public int getGroupSize() {
+        return groupSize;
+    }
+
+
+
     public Group(int groupSize, Mountain mountain) {
-        this.groupClimbers = new Climber[groupSize];
+        this.groupClimbers = new Climber[setGroupSize(groupSize)];
         this.mountain = mountain;
     }
 
+    public int setGroupSize(int groupSize) {
+        if (groupSize >= 10){
+            throw new IllegalArgumentException("Группа не безопасна");
+        }
+        if (groupSize <= 0){
+            throw new IllegalArgumentException("Группа не существует");
+        }
+        return groupSize;
+    }
     public void addClimber (Climber climber){
+
+//        if ()
+//        groupClimbers[index] = climber;
+//        index++;
+
         int freeSpaceIndex = getFreeSpaceIndex();
         if (freeSpaceIndex == -1){
             System.out.println("Группа заполнена. Альпинист не будет добавлен: " + climber);

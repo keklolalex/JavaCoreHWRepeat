@@ -11,8 +11,8 @@ public class Mountain { //гора
 
     private int high;
 
-    public Mountain(String Name, String country, int high){
-        setName(Name);
+    public Mountain(String name, String country, int high){
+        setName(name);
         setCountry(country);
         setHigh(high);
     }
