@@ -8,29 +8,39 @@ package ru.itmo.HW.HW6.workTwo.product;
  */
 public class Product {
 
+    public String name;
     private int proteins; //белки
     private int fats; //жиры
     private int carbohydrates; //углеводы
     private int calories; //калории
 
-    public void sport(int proteins, int calories){ //для спорта
+    public Product(){}
+    public Product(int proteins, int calories){
+        this.sport(proteins, calories);
+    }
+
+    public Product(int proteins, int carbohydrates, int calories){
+        this.vegan(proteins, carbohydrates, calories);
+    }
+
+    public void sport(int proteins, int calories){ //для спорта, только белки и калории
         this.setProteins(proteins);
         this.setCalories(calories);
     }
 
-    public void vegan(int proteins, int carbohydrates, int calories){ //для веганов
+    public void vegan(int proteins, int carbohydrates, int calories){ //для веганов, только белки и углеводы и калории
         this.setProteins(proteins);
         this.setCalories(calories);
         this.setCarbohydrates(carbohydrates);
     }
 
-    public void homeStress(int fats, int carbohydrates, int calories){ //для стресса
+    public void homeStress(int fats, int carbohydrates, int calories){ //для стресса жиры(сладкое) и и углеводы и калории
         this.setFats(fats);
         this.setCalories(calories);
         this.setCarbohydrates(carbohydrates);
     }
 
-    public void product(int proteins, int fats, int carbohydrates, int calories) {
+    public void product(int proteins, int fats, int carbohydrates, int calories) { // какой то продукт с полным набором
         this.setProteins(proteins);
         this.setFats(fats);
         this.setCarbohydrates(carbohydrates);
@@ -84,10 +94,12 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" +
-                "proteins=" + proteins +
+                "name='" + name + '\'' +
+                ", proteins=" + proteins +
                 ", fats=" + fats +
                 ", carbohydrates=" + carbohydrates +
                 ", calories=" + calories +
                 '}';
     }
+
 }
